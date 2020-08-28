@@ -1,0 +1,20 @@
+{
+  "name": "1.0.0",
+  "version": "1.0.0",
+  "description": "my first code ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shankarpareek9950/core-node-first-app.git"
+  },
+  "author": "shankar pareek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shankarpareek9950/core-node-first-app/issues"
+  },
+  "homepage": "https://github.com/shankarpareek9950/core-node-first-app#readme"
+}
