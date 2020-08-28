@@ -1,6 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url')
+//lsof -Pi | grep LISTEN
 
 
 const json = fs.readFileSync(`${__dirname}/data/data.json`,'utf-8')
@@ -37,6 +38,17 @@ const server = http.createServer((req,res) => {
             res.writeHead(200, { 'Content-type': 'image/jpg'});
             res.end(data);
     });
+    }
+    else if(pathName === "/api/home/"){
+        //res.statusCode(200);
+        const data = {
+            status:true,
+            message:"test",
+            data:laptopData
+        }
+        res.writeHead(200,{'Content-type':"application/json"})
+        res.end(JSON.stringify(data))
+
     }
 
      else {
